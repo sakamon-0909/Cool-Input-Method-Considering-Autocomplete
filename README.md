@@ -1,34 +1,41 @@
-# Cool-Input-Method-Considering-Autocomplete
+# 自動補完機能を考慮したかっこいい入力方法
 
-This script provides a unique way to input text into any application, especially designed for environments where autocomplete and auto-indentation features are present. By using this method, you can ensure that the text is input one character at a time, bypassing any autocomplete or auto-indentation features that might otherwise interfere with the input.
+このスクリプトは、自動補完や自動インデント機能が存在する環境でのテキスト入力を目的としています。この方法を使用することで、テキストが一文字ずつ入力され、自動補完や自動インデント機能が入力を妨げることなく行われることを保証します。
 
-Features
-Bypass Autocomplete: The script types out text one character at a time, ensuring that autocomplete features in most applications don't get triggered.
+## 機能
 
-Disable Auto-Indentation: By moving to the beginning of the next line using the arrow key instead of the enter key, the script avoids triggering auto-indentation in many text editors or IDEs.
+- **自動補完のバイパス**: 
+  - スクリプトはテキストを一文字ずつタイプし、ほとんどのアプリケーションの自動補完機能がトリガーされないようにします。
+  
+- **自動インデントの無効化**: 
+  - Enterキーの代わりに矢印キーを使用して次の行の先頭に移動することで、多くのテキストエディタやIDEでの自動インデントを回避します。
+  
+- **クイック終了**: 
+  - いつでも`Esc`キーを押すことでスクリプトをすぐに終了できます。
 
-Quick Termination: You can quickly terminate the script at any point by pressing the Esc key.
+## 使用方法
 
-How to Use
-Copy Text: Copy the text you want to input using Ctrl + C.
+1. **テキストのコピー**: 
+   - `Ctrl + C`を使用して入力したいテキストをコピーします。
+  
+2. **タイピングの開始**: 
+   - `Ctrl + M`を押してタイピングモードをアクティブにします。スクリプトはコピーされたテキストを一文字ずつタイプし始めます。
+  
+3. **終了**: 
+   - スクリプトをいつでも停止したい場合は、`Esc`キーを押してください。
 
-Start Typing: Activate the typing mode by pressing Ctrl + M. The script will start typing out the copied text one character at a time.
+## 必要条件
 
-Terminate: If you wish to stop the script at any point, simply press the Esc key.
+- **Python**
+- **`keyboard` ライブラリ**: 
+  - キーの押下を検出し、キーボード入力をシミュレートするために使用します。
+- **`pyperclip` ライブラリ**: 
+  - コピーされたテキストを取得するためのクリップボードへのアクセスに使用します。
 
-Requirements
-Python
-keyboard library: Used for detecting key presses and simulating keyboard input.
-pyperclip library: Used for accessing the clipboard to get the copied text.
-Installation
-Install the required Python libraries:
+## インストール
 
-Copy code
+1. **必要なPythonライブラリのインストール**:
 pip install keyboard pyperclip
-Run the script:
 
-Copy code
-python script_name.py
-Replace script_name.py with the name you've saved the script as.
-
-このREADMEは、スクリプトの主な機能と使用方法を説明しています。必要に応じて、内容をカスタマイズしてください。
+2. **スクリプトの実行**:
+   `スクリプトの名前.py`を、あなたがスクリプトとして保存した名前に置き換えてください。
